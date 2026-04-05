@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #F7F4EE;
+    --surface: #EDE9E0;
+    --cardBg: #FDFCF8;
+    --cardBorder: rgba(59,109,17,0.12);
+    --accent: #3B6D11;
+    --accentHover: #27500A;
+    --accentGlow: rgba(59,109,17,0.1);
+    --positive: #3B6D11;
+    --negative: #993C1D;
+    --textPrimary: #1E1C14;
+    --textSecondary: #3B6D11;
+    --textMuted: #7A7060;
+    --chartBaseline: #C0DD97;
+    --chartScenario: #3B6D11;
+  }
+  .dark {
+    --background: #070D12;
+    --surface: #0D1B24;
+    --cardBg: #132030;
+    --cardBorder: rgba(29,158,117,0.15);
+    --accent: #1D9E75;
+    --accentHover: #0F6E56;
+    --accentGlow: rgba(29,158,117,0.2);
+    --positive: #1D9E75;
+    --negative: #f87171;
+    --textPrimary: #D6EFE8;
+    --textSecondary: #5DCAA5;
+    --textMuted: #3A6B5D;
+    --chartBaseline: #185FA5;
+    --chartScenario: #1D9E75;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: var(--background);
+  color: var(--textPrimary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
