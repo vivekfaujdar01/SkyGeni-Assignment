@@ -88,7 +88,7 @@ export default function Controls({
           disabled={loading}
           className={`flex-1 flex justify-center items-center gap-2 py-3.5 bg-accent text-cardBg border-none rounded-xl text-sm font-bold tracking-wide shadow-lg shadow-accent/25 transition-all hover:bg-accentHover hover:-translate-y-0.5 active:translate-y-0 active:shadow-sm ${loading ? 'opacity-70 pointer-events-none' : ''}`}
         >
-          {loading ? '⏳ Simulating...' : <><Play className="w-4 h-4 fill-current" /> Run Simulation</>}
+          {loading ? 'Simulating...' : <><Play className="w-4 h-4 fill-current" /> Run Simulation</>}
         </button>
         <button 
           onClick={onReset} 
