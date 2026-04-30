@@ -50,8 +50,8 @@ export default function SimulatorChart({ result, formatCurrency }) {
   }));
 
   function yAxisFormat(value) {
-    if (value >= 100000) return `₹${(value / 100000).toFixed(0)}L`;
-    if (value >= 1000) return `₹${(value / 1000).toFixed(0)}K`;
+    if (value >= 100000) return `₹${parseFloat((value / 100000).toFixed(1))}L`;
+    if (value >= 1000) return `₹${parseFloat((value / 1000).toFixed(1))}K`;
     return `₹${value}`;
   }
 
